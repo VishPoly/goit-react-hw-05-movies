@@ -1,5 +1,6 @@
 import { MovieLink } from './MovieItem.styled';
 import PropTypes from 'prop-types';
+
 const MovieItem = ({ id, title }) => {
   return (
     <>

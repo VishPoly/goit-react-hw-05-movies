@@ -8,7 +8,7 @@ const HomePageRender = lazy(() => import('../pages/HomePage'));
 const MoviesPageRender = lazy(() => import('../pages/MoviesPage'));
 const MovieDetailsRender = lazy(() => import('../pages/MovieDetailsPage'));
 // const CastPage = lazy(() => import('../pages/CastPage'));
-// const ReviewsPage = lazy(() => import('../pages/ReviewsPage'));
+
 
 export const App = () => {
   return (

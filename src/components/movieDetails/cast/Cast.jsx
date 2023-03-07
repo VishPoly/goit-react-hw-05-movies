@@ -1,5 +1,6 @@
 import defaultImg from '../../../images/defaultImg.png';
 import PropTypes from 'prop-types';
+
 export function Cast({ cast }) {
   return (
     <>

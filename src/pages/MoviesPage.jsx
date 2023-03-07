@@ -4,8 +4,10 @@ import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import { fetchMoviesBySearch } from 'service/apiService';
 import { MoviesList } from 'components/moviesList/MoviesList';
-// import SearchBar from 'components/searchBox/SearchBox';
+
 import styled from 'styled-components';
+
+
 export default function MoviesPageRender() {
   const [movies, setMovies] = useState([]);
   const [searhParams, setSearchParams] = useSearchParams();
