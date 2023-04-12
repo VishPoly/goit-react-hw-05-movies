@@ -10,7 +10,7 @@ const ReviewsPage = lazy(() => import('./ReviewsPage'));
 const MovieDetailsRender = () => {
   const location = useLocation();
   const { movieId } = useParams();
-  const goBackPage = location.state?.from ?? '/';
+  const goBackPage = location.state?.from || location.pathname.slice(0, location.pathname.lastIndexOf("/")) || '/';
   return (
     movieId && (
       <>
