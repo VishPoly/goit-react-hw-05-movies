@@ -11,9 +11,12 @@ const MovieDetailsRender = () => {
   const location = useLocation();
   const { movieId } = useParams();
   const goBackPage = location.state?.from || location.pathname.slice(0, location.pathname.lastIndexOf("/")) || '/';
+
   return (
     movieId && (
       <>
+        {/* <GoBack to={{pathname:location.pathname === "/movie" ? }}>Go back</GoBack> */}
+
         <GoBack to={goBackPage}>Go back</GoBack>
         <MovieDetails />
         <AdditionalInfo>
